@@ -10,7 +10,6 @@ var win = Ti.UI.currentWindow;
  */
 // create header view
 var vHeader = Ti.UI.createView({
-    borderRadius:10,
     top:0,
     height:100,
     backgroundColor:'F0FFFF'

@@ -5,22 +5,20 @@ var myTeamName = '神奈川県立湘北高校';
 var otherTeamName = '神奈川県立陵南高校';
 
 // 自チーム名
-var myTeamName = Ti.UI.createLabel({
+var myTeamNameLabel = Ti.UI.createLabel({
     text:myTeamName,
-    //backgroundColor:"blue",
     font:{fontSize:12},
     textAlign:'center',
-    width:"100",
+    width:"110",
     height:"40",
     top:10,
     left:10
 });
-vHeader.add(myTeamName);
+vHeader.add(myTeamNameLabel);
 
 // VS label
 var vsLabel = Ti.UI.createLabel({
     text:"VS",
-    //backgroundColor:"red",
     font:{fontSize:12},
     width:"100",
     height:"40",
@@ -31,17 +29,16 @@ var vsLabel = Ti.UI.createLabel({
 vHeader.add(vsLabel);
 
 // 相手チーム名
-var otherTeamName = Ti.UI.createLabel({
+var otherTeamNameLabel = Ti.UI.createLabel({
     text:otherTeamName,
-    //backgroundColor:"green",
     font:{fontSize:12},
     textAlign:'center',
-    width:"100",
+    width:"110",
     height:"40",
     top:10,
-    left:210
+    left:200
 });
-vHeader.add(otherTeamName);
+vHeader.add(otherTeamNameLabel);
 
 // 得点をDBから取得して表示する
 Ti.include('game_db.js');
@@ -53,7 +50,6 @@ var otherDbPoint = gameDb.getPoint(2);
 // 自チーム得点表示
 var myPoint = Ti.UI.createLabel({
     text:myDbPoint,
-    //backgroundColor:"blue",
     font:{fontSize:36},
     textAlign:'center',
     width:"100",
@@ -66,7 +62,6 @@ vHeader.add(myPoint);
 // 相手チーム得点表示
 var otherPoint = Ti.UI.createLabel({
     text:otherDbPoint,
-    //backgroundColor:"green",
     font:{fontSize:36},
     textAlign:'center',
     width:"100",
@@ -89,4 +84,3 @@ win.addEventListener('refresh',function(){
     myPoint.text = myDbPoint;
     otherPoint.text = otherDbPoint;
 });
-
