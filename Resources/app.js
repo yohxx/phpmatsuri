@@ -41,10 +41,25 @@ var tab2 = Titanium.UI.createTab({
 });
 
 //
+// データ同期用ウインドウ
+//
+var winSync = Titanium.UI.createWindow({
+    title:'Sync',
+    url:'game/game_sync.js',
+    backgroundColor:'#fff'
+});
+var tab3 = Titanium.UI.createTab({
+    icon:'KS_nav_ui.png',
+    title:'sync',
+    window:winSync
+});
+
+//
 //  add tabs
 //
 tabGroup.addTab(tab1);
 tabGroup.addTab(tab2);
+tabGroup.addTab(tab3);
 
 // open tab group
 tabGroup.open({

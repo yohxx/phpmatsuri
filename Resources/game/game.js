@@ -61,7 +61,7 @@ win.add(scrollableView);
 var vMenu = Ti.UI.createView({
     borderRadius:10,
     top:310,
-    height:70,
+    height:65,
     backgroundColor:'778899'
 });
 Ti.include('game_menu.js');
