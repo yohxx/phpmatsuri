@@ -10,8 +10,8 @@ var myTeamNameLabel = Ti.UI.createLabel({
     font:{fontSize:12},
     textAlign:'center',
     width:"110",
-    height:"40",
-    top:10,
+    height:"35",
+    top:1,
     left:10
 });
 vHeader.add(myTeamNameLabel);
@@ -21,9 +21,9 @@ var vsLabel = Ti.UI.createLabel({
     text:"VS",
     font:{fontSize:12},
     width:"100",
-    height:"40",
+    height:"35",
     textAlign:'center',
-    top:10,
+    top:1,
     left:110
 });
 vHeader.add(vsLabel);
@@ -34,8 +34,8 @@ var otherTeamNameLabel = Ti.UI.createLabel({
     font:{fontSize:12},
     textAlign:'center',
     width:"110",
-    height:"40",
-    top:10,
+    height:"35",
+    top:1,
     left:200
 });
 vHeader.add(otherTeamNameLabel);
@@ -54,7 +54,7 @@ var myPoint = Ti.UI.createLabel({
     textAlign:'center',
     width:"100",
     height:"40",
-    top:50,
+    top:40,
     left:10
 });
 vHeader.add(myPoint);
@@ -66,7 +66,7 @@ var otherPoint = Ti.UI.createLabel({
     textAlign:'center',
     width:"100",
     height:"40",
-    top:50,
+    top:40,
     left:210
 });
 vHeader.add(otherPoint);

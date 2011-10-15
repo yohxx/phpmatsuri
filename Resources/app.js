@@ -36,7 +36,7 @@ var winGame = Titanium.UI.createWindow({
 });
 var tab2 = Titanium.UI.createTab({
     icon:'KS_nav_ui.png',
-    title:'Score',
+    title:'game socre',
     window:winGame
 });
 

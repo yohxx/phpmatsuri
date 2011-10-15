@@ -11,7 +11,7 @@ var win = Ti.UI.currentWindow;
 // create header view
 var vHeader = Ti.UI.createView({
     top:0,
-    height:100,
+    height:80,
     backgroundColor:'F0FFFF'
 });
 // ヘッダ部
@@ -26,7 +26,7 @@ win.add(vHeader);
 // create teamA view
 var vTeamA = Ti.UI.createView({
     borderRadius:10,
-    top:95,
+    top:85,
     height:305,
     backgroundColor:'90EE90'
 });
@@ -37,7 +37,7 @@ myTeamObj.showView();
 // create teamB view
 var vTeamB = Ti.UI.createView({
     borderRadius:10,
-    top:95,
+    top:85,
     height:305,
     backgroundColor:'D3D3D3'
 });
@@ -60,8 +60,8 @@ win.add(scrollableView);
 // create menu view
 var vMenu = Ti.UI.createView({
     borderRadius:10,
-    top:400,
-    height:80,
+    top:310,
+    height:70,
     backgroundColor:'778899'
 });
 Ti.include('game_menu.js');

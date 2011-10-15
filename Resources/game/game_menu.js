@@ -2,12 +2,12 @@
  * メニューエリア
  */
 
-var menuTop = 10;
+var menuTop = 2;
 
 var menuButton = Ti.UI.createButton({
     title:'終了',
     font:{fontSize:10},
-    height:30,
+    height:50,
     width:90,
     top:menuTop,
     left:13
@@ -17,7 +17,7 @@ vMenu.add(menuButton);
 var historyButton = Ti.UI.createButton({
     title:'履歴',
     font:{fontSize:10},
-    height:30,
+    height:50,
     width:90,
     top:menuTop,
     left:113
@@ -27,7 +27,7 @@ vMenu.add(historyButton);
 var configButton = Ti.UI.createButton({
     title:'設定',
     font:{fontSize:10},
-    height:30,
+    height:50,
     width:90,
     top:menuTop,
     left:213

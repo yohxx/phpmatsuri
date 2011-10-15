@@ -18,7 +18,7 @@ var TeamObj = function(viewObj, teamId, teamName){
             textAlign:'center',
             width:"300",
             height:"30",
-            top:5,
+            top:2,
             left:10
         });
         this.teamView.add(teamNameLabel);
@@ -26,8 +26,8 @@ var TeamObj = function(viewObj, teamId, teamName){
         // アイコンサイズと位置定義
         var iconWidth = 90;
         var iconHeight = 90;
-        var iconTop = 40;
-        var iconSecond = 140;
+        var iconTop = 30;
+        var iconSecond = 120;
 
         var ivPlayer1 = Ti.UI.createImageView({
             image:'../images/player.png',
